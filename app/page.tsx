@@ -4,20 +4,11 @@ import dynamic from "next/dynamic";
 
 import { useLaunchParams } from "@tma.js/sdk-react";
 
+import SplashScreen from "@/components/SplashScreen";
+
 const MiniAppProvider = dynamic(() => import("@/components/MiniAppProvider"), {
   ssr: false,
-  loading: () => (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      }}
-    >
-      <p>Loading...</p>
-    </div>
-  ),
+  loading: () => <SplashScreen />,
 });
 
 export default function HomePage() {
