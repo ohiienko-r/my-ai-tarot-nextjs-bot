@@ -1,7 +1,8 @@
 "use client";
 
+import { PropsWithChildren, useEffect } from "react";
+
 import {
-  useLaunchParams,
   backButton,
   themeParams,
   miniApp,
@@ -11,11 +12,8 @@ import {
   swipeBehavior,
   viewport,
 } from "@tma.js/sdk-react";
-import { useEffect } from "react";
 
-export default function MiniApp() {
-  const launchParams = useLaunchParams();
-
+export default function MiniAppProvider({ children }: PropsWithChildren) {
   useEffect(() => {
     initData.restore();
 
@@ -65,12 +63,5 @@ export default function MiniApp() {
     };
   }, []);
 
-  const user = launchParams.tgWebAppData?.user;
-
-  return (
-    <div className="flex justify-center items-center gap-2 p-2 size-full">
-      <h1 className="font-semibold text-xl">Welcome, {user?.first_name} 👋</h1>
-      <p>Right now we're busy cooking something new for you! Stay tuned!</p>
-    </div>
-  );
+  return <>{children}</>;
 }
