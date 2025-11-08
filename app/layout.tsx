@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { TelegramProvider } from "@/components/TelegramProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,12 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="uk">
-      <head>
-        <script src="https://telegram.org/js/telegram-web-app.js" async />
-      </head>
-      <body>
-        <TelegramProvider>{children}</TelegramProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
