@@ -15,7 +15,9 @@ bot.command("app", (ctx) => {
         [
           {
             text: "🚀 Dev",
-            web_app: { url: "https://ck4d7m16-5173.euw.devtunnels.ms/" },
+            web_app: {
+              url: "https://chamois-internal-preferably.ngrok-free.app",
+            },
           },
         ],
       ],
