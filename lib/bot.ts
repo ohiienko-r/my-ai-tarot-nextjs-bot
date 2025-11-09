@@ -7,3 +7,18 @@ bot.command("start", async (ctx) => {
     "👋 Hi! We're back and currently cooking something. Stay tuned!"
   );
 });
+
+bot.command("app", (ctx) => {
+  ctx.reply("Dev server:", {
+    reply_markup: {
+      inline_keyboard: [
+        [
+          {
+            text: "🚀 Dev",
+            web_app: { url: "https://ck4d7m16-5173.euw.devtunnels.ms" },
+          },
+        ],
+      ],
+    },
+  });
+});
