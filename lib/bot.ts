@@ -24,3 +24,20 @@ bot.command("app", (ctx) => {
     },
   });
 });
+
+bot.command("app_sho", (ctx) => {
+  ctx.reply("Dev server:", {
+    reply_markup: {
+      inline_keyboard: [
+        [
+          {
+            text: "🚀 Dev",
+            web_app: {
+              url: "https://chamois-internal-preferably.ngrok-free.app/login/telegram/verify/",
+            },
+          },
+        ],
+      ],
+    },
+  });
+});
