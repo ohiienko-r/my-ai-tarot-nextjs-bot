@@ -33,7 +33,7 @@ bot.command("app_sho", (ctx) => {
           {
             text: "🚀 Dev",
             web_app: {
-              url: "https://chamois-internal-preferably.ngrok-free.app/login/telegram/verify/",
+              url: "https://chamois-internal-preferably.ngrok-free.app/auth/365976134",
             },
           },
         ],
