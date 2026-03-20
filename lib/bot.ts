@@ -16,7 +16,7 @@ bot.command("app", (ctx) => {
           {
             text: "🚀 Dev",
             web_app: {
-              url: "https://7tdpt3jd-5173.euw.devtunnels.ms",
+              url: "https://gopher-positive-jaybird.ngrok-free.app",
             },
           },
         ],
