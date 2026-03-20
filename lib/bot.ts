@@ -16,7 +16,7 @@ bot.command("app", (ctx) => {
           {
             text: "🚀 Dev",
             web_app: {
-              url: "https://7tt5472n-5173.euw.devtunnels.ms",
+              url: "https://7tdpt3jd-5173.euw.devtunnels.ms",
             },
           },
         ],
